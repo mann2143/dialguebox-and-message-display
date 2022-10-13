@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogue box</title>
+
+    <script>
+        function getval() {
+            var a = confirm("Do you want to continue ?");
+            if (a==true){
+                document.write("User wants to continue...");
+                return true;
+            }
+            else{
+                document.write("User does not want to continue...")
+                return false;
+            }
+        }
+
+        function getval2() {
+            var b = prompt("What is your name" , "your name here");
+            alert("Your name is " + b)
+            
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <p>Enter your age here:</p>
+        <input type="number">
+        <br>
+        <br>
+    <button onclick="getval()">Submit</button>
+    <button onclick="getval2()">Hello</button>
+    </form>
+</body>
+</html>
